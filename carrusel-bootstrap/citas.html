@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Carrusel - Citas</title>
+<meta charset="utf-8">
+<!-- Componente carrusel de Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="css/estilos.css" rel="stylesheet">
+<link href="css/citas_slide.css" rel="stylesheet" type="text/css"/> 
+
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/citas.js" type="text/javascript"></script>
+<script src="js/galeria.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Barra de navegación collapse horizontal -->
+  <div class="container">
+    <nav class="navbar navbar-inverse "> 
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="carrusel-bootstrap.html">CARRUSEL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="miMenu">
+      <ul class="nav navbar-nav">
+        <li><a href="carrusel-bootstrap.html">INICIO</a></li>
+        <li><a href="puzzle.html">PUZZLE</a></li>
+        <li><a href="calculadora.html">CALCULADORA</a></li> 
+        <li class="active"><a href="citas.html">CITAS</a></li> 
+        <li><a href="#">TEMPORIZADOR</a></li> 
+      </ul>
+    </div>
+   </div>
+  </nav>
+
+<!-- Citas -->
+<div class="contenido">
+  <nav> 
+    <ul id="selector"></ul>
+  </nav>
+  <section id="caja">
+    <img id="foto" alt="" />
+    <div class="textos">
+      <p id="frase"></p>
+      <p id="persona"></p>
+    </div>
+  </section>
+  <div class="editar" id="editar"> 
+    <img src="images/carat-d-white.svg" title="Editar citas" alt=""/>
+  </div>
+  <section id="datos">
+    <div contentEditable="true" id="persona_d"></div>
+    <div contentEditable="true" id="frase_d"></div>
+    <div contentEditable="true" id="foto_d"></div>
+    <div id="botones">
+      <ul>
+        <li><img src="images/edit-black.svg" title="Modificar cita" id="modificar"/></li>
+        <li><img src="images/plus-black.svg" title="Añadir cita" id="nuevo"/></li>
+        <li><img src="images/delete-black.svg" title="Borrar cita" id="borrar"/></li>
+      </ul>
+    </div>
+  </section>
+  <div class="pie">2016 © Ezequiel Llarena Borges</div>
+</div>
+
+</div>
+</body>
+</html>
+

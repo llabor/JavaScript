@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <title>Carrusel Bootstrap Collapse</title> 
+  <meta charset="utf-8">
+  <!-- Definir viewport e importar bootstrap y jQuery -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href="css/estilos.css" rel="stylesheet">
+  <script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+  <!-- Barra de navegación collapse horizontal -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="carrusel-bootstrap.html">CARRUSEL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="miMenu">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="carrusel-bootstrap.html">INICIO</a></li>
+        <li><a href="puzzle.html">PUZZLE</a></li>
+        <li><a href="calculadora.html">CALCULADORA</a></li> 
+        <li><a href="citas.html">CITAS</a></li> 
+        <li><a href="#">TEMPORIZADOR</a></li> 
+      </ul>
+    </div>
+  </div>
+  </nav>
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- menú -->
+    <!-- Botones de selección del carrusel -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active"> 
+      <a href="puzzle.html">
+        <img src="images/slide1.png" alt="Puzzle" width="954" height="410">
+      </a>
+      </div>
+      <div class="item">
+      <a href="calculadora.html">
+        <img src="images/slide4.png" alt="Calculadora" width="954" height="410">
+      </a>
+      </div>       
+      <div class="item">
+      <a href="citas.html">
+        <img src="images/slide3.png" alt="Frases" width="954" height="410">
+      </a>
+      </div>
+      <div class="item">
+        <img src="images/slide2.png" alt="Temporizador" width="954" height="410">
+      </div>
+    </div>
+    <!-- Definición de las flechas (izq y der) de transición al anterior/siguiente slider del carrusel -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+   
+  </div>
+  <div class="pie">2016 © Ezequiel Llarena Borges</div>
+</div>
+</body>
+</html>
+

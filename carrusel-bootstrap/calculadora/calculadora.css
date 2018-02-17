@@ -1,0 +1,76 @@
+/* Estilos de calculadora.htm */
+.pantalla {
+    font-family: Arial, sans-serif;
+    color:gray;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+#display {
+    background-color: orange;
+    width:300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;   
+    margin-top: 20px; 
+    margin-bottom: 8px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    text-align: center;
+}
+
+.resultado {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
+    background-color: #C0C0C0;
+    text-align: center;
+    width:300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;   
+    margin-top: 1px; 
+}
+
+.operadores {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
+    background-color: #C0C0C0;
+    text-align: center;
+    width:300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;   
+    margin-top: 1px; 
+}
+
+#memoria {
+    width:300px;
+    font-size: 0.9em;
+    text-align: right;
+    color:gray;
+    margin-left:auto;
+    margin-right: auto;
+    padding:5px;   
+    margin-top: 2px; 
+    margin-bottom: 8px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+.operadores button {
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+    color: white;
+    background-color: #8f8fed;
+}
+
+.resultado button {
+    height: 40px;
+    width: 50px;
+    margin: 0px;
+    background-color: gray;
+    color: white;
+}

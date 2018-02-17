@@ -1,0 +1,47 @@
+html, body { 
+    margin:0; 
+    padding:0; 
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+header {
+    background-color:#8f8fed;
+    color:white;
+    font-size: 1.2em;
+    text-align:center;  
+    padding:15px;
+}
+section {
+    width:300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;   
+    margin-top: 40px; 
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    text-align: center;
+}
+footer {
+    background-color:#c7f6c7;
+    color:#4F4F4F;
+    text-align:center;   
+    padding:40px; 
+    width:100%;
+    position: fixed;
+    bottom: 0px;
+}
+.titulo {
+    margin-top: 15px;
+    text-align:center;  
+    font-size: 1.5em;
+}
+.operadores {
+    width:300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;   
+    margin-top: 10px; 
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}

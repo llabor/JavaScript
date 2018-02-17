@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora</title>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<script type="text/javascript">
+  var num, acc = 0, op = "";
+
+  function inic ()   {num = document.getElementById("num");}
+  function vaciar () {num.value = "";}  
+
+  /* Operaciones binarias, dos operandos */
+  function mas()   { acc = num.value;  op = "+"; }
+  function menos() { acc = num.value;  op = "-"; }
+  function mult() { acc = num.value;  op = "*"; }
+  function div() { acc = num.value;  op = "/"; }
+  function potencia() { acc = num.value;  op = "^"; }
+  function calcular() {
+    if (op === "+") {num.value = (+acc + +num.value)} 
+    if (op === "-") {num.value = (+acc - +num.value)}
+    if (op === "*") {num.value = (+acc * +num.value)} 
+    if (op === "/") {num.value = (+acc / +num.value).toFixed(10)}
+    if (op === "^") {num.value = (Math.pow(+acc, +num.value))}
+  }
+
+  /* Operaciones unitarias, un solo operando */
+  function cuadrado() {
+    var num = document.getElementById("num");
+    num.value = (num.value * num.value).toFixed(10); // limitamos el resultado a 10 digitos decimales para que quepa en la caja de los operandos
+  }
+
+  function inverso() {
+    var num = document.getElementById("num");
+    num.value = (1/num.value).toFixed(10);
+  }
+
+  function raiz_cuadrada() {
+    var num = document.getElementById("num");
+    num.value = Math.sqrt(num.value).toFixed(10);
+  }
+
+  function entera() {   
+    var num = document.getElementById("num");
+    var valor = num.value;
+    if (valor > 0) {
+      num.value = Math.floor(valor);
+    } else {
+      // ceil() requiere valor absoluto para número negativo
+      // para que devuelva el redondeo superior correctamente
+      num.value = -Math.ceil(Math.abs(valor));
+    }
+  }
+</script>
+</head>
+<body onLoad="inic()">
+  <header>
+    <h1>CALCULADORA</h1>
+  </header>
+ <!-- <div class="titulo">Buenos días, bienvenido a la calculadora de Ezequiel Llarena Borges</div> -->
+  <section>
+    <label>Operandos&nbsp;</label><input type="text" size="12" id="num" onClick="vaciar()">&nbsp;<button onClick="vaciar()">C</button>&nbsp;<button onClick="calcular()">=</button><p>
+    </section>
+  <section class="operadores">
+    Operaciones Unitarias<p>
+    <button onclick="cuadrado()">x<sup>2</sup> </button>
+    <button onclick="inverso()">1/x </button>
+    <button onclick="raiz_cuadrada()">sqrt</button>
+    <button onclick="entera()">|x|</button>
+  </section>
+  <section class="operadores">
+    Operaciones Binarias<p>
+    <button onClick="mas()">+</button>
+    <button onClick="menos()">-</button>
+    <button onClick="mult()">*</button>
+    <button onClick="div()">/</button>
+    <button onclick="potencia()">x^y</button>
+  </section>
+  <footer>Copyright © Ezequiel Llarena Borges</footer>
+
+</body>
+</html>

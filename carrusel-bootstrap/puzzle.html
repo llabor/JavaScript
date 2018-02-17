@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Carrusel - Puzzle</title>
+<meta charset="utf-8">
+<!-- Componente carrusel de Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="css/estilos.css" rel="stylesheet">
+<script src="puzzle/jquery-2.1.4.js"></script>
+<script src="puzzle/jquery-ui.min.js"></script>
+<!-- Añadimos librería para interacción táctil en smartphones y tablets -->
+<script src="puzzle/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+  $(function() {
+   $( "#sortable" ).sortable();
+   $( "#sortable" ).disableSelection();
+  });
+</script>  
+</head>
+<body>
+<!-- Barra de navegación collapse horizontal -->
+<div class="container">
+<nav class="navbar navbar-inverse "> 
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="carrusel-bootstrap.html">CARRUSEL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="miMenu">
+      <ul class="nav navbar-nav">
+        <li><a href="carrusel-bootstrap.html">INICIO</a></li>
+        <li class="active"><a href="puzzle.html">PUZZLE</a></li>
+        <li><a href="calculadora.html">CALCULADORA</a></li> 
+        <li><a href="citas.html">CITAS</a></li> 
+        <li><a href="#">TEMPORIZADOR</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- puzzle -->
+<div class="ejercicio">
+  <ul id="sortable">
+    <li><img id="p1" src="puzzle/rafael_8.jpg" alt=""/></li>
+    <li><img id="p2" src="puzzle/rafael_4.jpg" alt=""/></li>
+    <li><img id="p3" src="puzzle/rafael_6.jpg" alt=""/></li>
+    <li><img id="p4" src="puzzle/rafael_2.jpg" alt=""/></li>
+    <li><img id="p5" src="puzzle/rafael_9.jpg" alt=""/></li>
+    <li><img id="p6" src="puzzle/rafael_3.jpg" alt=""/></li>
+    <li><img id="p7" src="puzzle/rafael_7.jpg" alt=""/></li>
+    <li><img id="p8" src="puzzle/rafael_1.jpg" alt=""/></li>
+    <li><img id="p9" src="puzzle/rafael_5.jpg" alt=""/></li>
+  </ul>
+ <!-- <div class="clear"> </div> -->
+  <div class="pie">2016 © Ezequiel Llarena Borges</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
