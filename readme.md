@@ -11,7 +11,7 @@ El proceso de carga de una página web se puede simplificar de la siguiente mane
 
 El paso 4 es potencialmente la causa de una demora en la carga de la página, porque antes de mostrar los elementos visuales, el navegador debe descargar y ejecutar todos los scripts.
 
-Solución
+Solución:
 Tomando en cuenta el comportamiento del navegador cuando encuentra una etiqueta script, una posible solución es colocar dichas etiquetas lo más abajo posible dentro de la etiqueta body.
 
 ```bash
@@ -34,11 +34,7 @@ Tomando en cuenta el comportamiento del navegador cuando encuentra una etiqueta 
 ```
 
 ## jQuery
+
 ## Bootstrap
 
-## Angular
-### Angular JS
-AngularJS es un framework MVC de JavaScript para el Desarrollo Web Front End que permite crear aplicaciones SPA Single-Page Applications. 
 
-### Angular
-Angular es un framework para aplicaciones web de TypeScript de código abierto, mantenido por Google, que se utiliza para crear y mantener SPAs (Single Page Application) aplicaciones web de una sola página. Angular es la evolución de AngularJS aunque incompatible con su predecesor.
