@@ -34,7 +34,7 @@ Tomando en cuenta el comportamiento del navegador cuando encuentra una etiqueta 
 ```
  
 ### var vs let
-The difference is scoping. ```bashvar``` is scoped to the nearest function block and ```bashlet``` is scoped to the nearest enclosing block, which can be smaller than a function block. Both are global if outside any block.
+The difference is scoping. ```var``` is scoped to the nearest function block and ```let``` is scoped to the nearest enclosing block, which can be smaller than a function block. Both are global if outside any block.
 
 ## jQuery
 
