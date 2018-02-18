@@ -32,6 +32,9 @@ Tomando en cuenta el comportamiento del navegador cuando encuentra una etiqueta 
   </body>
 </html>
 ```
+ 
+### var vs let
+The difference is scoping. ```bash var``` is scoped to the nearest function block and ```bash let``` is scoped to the nearest enclosing block, which can be smaller than a function block. Both are global if outside any block.
 
 ## jQuery
 
