@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript can change table content on the fly</title>
+<link rel="stylesheet" type="text/css" href="change-style-onthefly.css">
+</head>
+<body>
+  <h2>Contact list</h2>
+  <button onclick="buildTable();">Click to build the table!</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Given name</th>
+        <th>Family name</th>
+      </tr>
+    </thead>
+    <tbody id="tableContactBody">
+    </tbody>
+  </table>
+    <footer>W3Cx JavaScript</footer>
+<script type="text/javascript">
+  function buildTable() {
+        addLineToHTMLTable("Michel", "Buffa");
+        addLineToHTMLTable("Marie-Claire", "Forgue");
+        addLineToHTMLTable("Tim", "Berners-Lee");
+}
+
+// Add a line to the HTML table
+function addLineToHTMLTable(firstName, lastName) {
+    // Get the body of the table using the selector API
+    var tableBody = document.querySelector("#tableContactBody");
+  
+    // Add a new row at the end of the table
+    var newRow   = tableBody.insertRow();
+
+   // add  new cells to the row
+   var firstNameCell  = newRow.insertCell();
+   firstNameCell.innerHTML = firstName;
+  
+   var lastNameCell   = newRow.insertCell();
+   lastNameCell.innerHTML = lastName;
+}
+</script>
+</body>
+</html>
+
