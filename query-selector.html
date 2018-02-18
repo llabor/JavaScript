@@ -1,0 +1,78 @@
+<!--
+we have two buttons that will call a JavaScript function where we will manipulate the DOM), and we have four images, the first one with an id equal to "img1". 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>querySelector and querySelectorAll</title>
+</head>
+<body>
+  <button onclick="addBorderToFirstImage();">
+    Add a border to the first image
+  </button>
+  <br>
+  <button onclick="resizeAllImages();">
+    Resize all images
+  </button>
+  <br>
+  <p>Click one of the buttons above!</p>
+<img src="https://mainline.i3s.unice.fr/mooc/Ntvj5rq.png" 
+     id="img1"
+     width=200 alt="image #1">
+<img src="https://mainline.i3s.unice.fr/mooc/yiU59oi.gif" 
+     width=200 alt="image #2">
+<img src="https://mainline.i3s.unice.fr/mooc/6FstYbc.jpg" 
+     width=200 alt="image #3">
+<img src="https://mainline.i3s.unice.fr/mooc/L97CyS4.png" 
+     width=200 alt="image #4">
+
+<script type="text/javascript">
+ 
+  window.onload = init; // run 'init' once the page is loaded
+   // the 'init' function is executed as soon as 
+  // the page is loaded (and the DOM is ready) 
+
+  // this function runs once the page is loaded
+  function init() {
+    // we're sure that the DOM is ready
+    // before querying it
+
+    
+    // add a shadow to all images
+    // select all images
+    var listImages = document.querySelectorAll("img");
+
+    // change all their width to 100px
+    listImages.forEach(function(img) {
+      // img = current image
+      img.style.boxShadow = "5px 5px 15px 5px grey";
+      img.style.margin = "10px";
+    });  
+    
+  }
+
+  function addBorderToFirstImage() {
+    // select the first image with id = img1
+    var img1 = document.querySelector('#img1');
+
+    // Add a red border, 3px wide
+    img1.style.border = '3px solid red';  
+  }
+
+  function resizeAllImages() {
+    // select all images
+    var listImages = document.querySelectorAll("img");
+
+    // change all their width to 100px
+    listImages.forEach(function(img) {
+      // img = current image
+      img.width = 100;
+    });
+  }
+
+</script>
+</body>
+</html>
+
