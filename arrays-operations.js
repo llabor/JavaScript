@@ -45,3 +45,16 @@ persons.forEach(function(p, index) {
                              ", at index " + index + " in the array<br>"; 
 });
 
+
+/* The forEach method takes a single argument that is a function/callback that can have one, two or three parameters:
+
+        The first parameter is the current element of the array,
+        The second parameter (optional) is the index of the current element in the array,
+        The third element is the array itself
+
+Typical use with only one parameter (the current element): */
+var a = ['Monday', 'Tuesday', 'Wednesday'];
+
+a.forEach(function(day) {  // day is the current element
+  document.body.innerHTML += day + "<br>"; // will display Monday, Tuesday, Wednesday
+});
