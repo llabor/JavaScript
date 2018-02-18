@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Change background color of p under an element whose id is known</title>
+</head>
+<body>
+  <button onclick="changeBackGroundOfPs('firstDiv');">Change backgrounds of p under a given element known by id</button>
+  <br>
+<div id="firstDiv">
+  <p>First paragraph.</p>
+  <p>Second paragraph.</p>
+</div>
+<script type="text/javascript">
+	function changeBackGroundOfPs(id) {
+	  var paragraphs = document.querySelectorAll("#" + id + " p");
+	  // to iterate on all elements in a collection
+	  for (var i = 0; i < paragraphs.length; i++ ) {
+	    paragraphs[i].style.backgroundColor = "lightGreen";
+  	  }
+	}
+</script>
+</body>
+</html>
+
