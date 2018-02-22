@@ -39,20 +39,19 @@ for(var i = 0; i < persons.length; i++) {
   document.body.innerHTML += p.name + "<br>"; 
 }
 
-// The most practical way to iterate on each element of a collection (array, string)
+// The most practical way to iterate on each element of a collection (array, string) using a callback function.
+/* The forEach method takes a single argument that is a function/callback that can have one, two or three parameters:
+        The first parameter is the current element of the array,
+        The second parameter (optional) is the index of the current element in the array,
+        The third element is the array itself
+*/
 persons.forEach(function(p, index) {
   document.body.innerHTML += p.name + ", age " + p.age + 
                              ", at index " + index + " in the array<br>"; 
 });
 
 
-/* The forEach method takes a single argument that is a function/callback that can have one, two or three parameters:
-
-        The first parameter is the current element of the array,
-        The second parameter (optional) is the index of the current element in the array,
-        The third element is the array itself
-
-Typical use with only one parameter (the current element): */
+// Typical use with only one parameter (the current element): 
 var a = ['Monday', 'Tuesday', 'Wednesday'];
 
 a.forEach(function(day) {  // day is the current element
