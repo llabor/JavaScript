@@ -7,6 +7,7 @@
     <body>
         <h1>Contact Class</h1>
        	<script>
+			/* Many instances of Objects using ES5 constructor functions and ES6 Classes */
 			class Contact {
 				constructor(name, email) {
 					this.name = name;
@@ -29,7 +30,7 @@
 
 							if(c.email === contact.email) {
 								// remove the contact at index i
-								this.listOfContacts.splice(i, i);
+								this.listOfContacts.splice(i, 1);
 								break;
 							}
 						}	
