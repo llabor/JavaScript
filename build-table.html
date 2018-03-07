@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript can change table content on the fly</title>
+  <link rel="stylesheet" href="build-table.css">
+</head>
+<body>
+  <h2>Listado de Contactos</h2>
+  <button onclick="buildTable();">Listar</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody id="tableContactBody">
+    </tbody>
+  </table>
+    <footer>JavaScript</footer>
+<script>
+	var persons = [
+		  {name:'Michel', age:51},
+		  {name:'Henri', age:20},
+		  {name:'Francois', age:29}
+	];
+
+	// Get the body of the table using the selector API
+	var tableBody = document.querySelector("#tableContactBody");
+
+  	function buildTable() {
+  	  	for(let j in persons) {
+	  		addLineToHTMLTable(persons[j].name, persons[j].age);
+	  	}
+	}
+
+// Add a line to the HTML table
+	function addLineToHTMLTable(name, age) {
+    
+	    // Add a new row at the end of the table
+	    var newRow   = tableBody.insertRow();
+
+	   // add  new cells to the row
+	   var firstNameCell  = newRow.insertCell();
+	   firstNameCell.innerHTML = name;
+  
+	   var lastNameCell   = newRow.insertCell();
+	   lastNameCell.innerHTML = age;
+	}
+</script>
+</body>
+</html>
+
