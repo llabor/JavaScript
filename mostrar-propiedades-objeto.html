@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Page Structure</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+        	window.onload = inic;
+        	var miAuto = new Object();
+			
+        	function inic() {
+				miAuto.marca = "Ford";
+				miAuto.modelo = "Mustang";
+				miAuto.año = 1969;
+				console.log(mostrarPropiedades(miAuto, "miAuto"));
+			}
+
+			function mostrarPropiedades(objeto, nombreObjeto) {
+			  var resultado = "";
+			  for (var i in objeto) {
+			    if (objeto.hasOwnProperty(i)) {
+			        resultado += nombreObjeto + "." + i + " = " + objeto[i] + "\n";
+			    }
+			  }
+			  return resultado;
+			}
+        </script> 
+    </body>
+</html>
+
