@@ -134,7 +134,7 @@ class ContactManager {
 	
 	save() {
 		// We can only save strings in local Storage. So, let's convert
-		// ou array of contacts to JSON
+		// our array of contacts to JSON
 		// saves the list of contacts with a key named "contacts" in the local storage
 		localStorage.contacts = JSON.stringify(this.listOfContacts);
 	} 
